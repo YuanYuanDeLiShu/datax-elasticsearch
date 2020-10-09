@@ -346,7 +346,7 @@ public class EsReader extends Reader {
             } else {
                 throw DataXException.asDataXException(ESReaderErrorCode.UNKNOWN_DATA_TYPE, "name:" + name);
             }
-            col.setName(name);
+            //col.setName(name);
             return col;
         }
 
