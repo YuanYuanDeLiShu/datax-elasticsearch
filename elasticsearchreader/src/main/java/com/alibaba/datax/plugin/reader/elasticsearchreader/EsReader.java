@@ -267,7 +267,7 @@ public class EsReader extends Reader {
                 return false;
             }
             List<SearchResult.Hit<Map, Void>> hits = result.getHits(Map.class);
-            log.info("search result: total={},maxScore={},hits={}", result.getTotal(), result.getMaxScore(), hits.size());
+            //log.info("search result: total={},maxScore={},hits={}", result.getTotal(), result.getMaxScore(), hits.size());
             List<Map<String, Object>> recordMaps = new ArrayList<>();
             for (SearchResult.Hit<Map, Void> hit : hits) {
                 List<EsField> column = table.getColumn();
